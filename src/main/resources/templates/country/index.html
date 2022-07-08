@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Demo page</title>
 </head>
 <body>
-    <h1 style="text-align: center">COUNTRY TEST</h1>
+<div layout:fragment="content" class="container">
+
+    <div class="jumbotron">
+        <h1 style="text-align: center">COUNTRY TEST</h1>
+        <p>TEST layaut thymelif</p>
+        <p>
+            <a class="btn btn-lg btn-primary" th:href="@{/}" role="button">See people list</a>
+        </p>
+    </div>
+</div>
 </body>
 </html>

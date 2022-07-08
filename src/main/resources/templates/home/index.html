@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
 <head>
-    <meta charset="UTF-8">
-    <title>PECUNI SPRING TEST</title>
+    <title>Demo page</title>
 </head>
 <body>
-    <h1 style="text-align: center">PECUNIA TEST</h1>
-    <h2>UPDATE HEROKU_22</h2>
+<div layout:fragment="content" class="container">
+
+    <div class="jumbotron">
+        <h1>Sample Demo App</h1>
+        <p>Allows to add people.</p>
+        <p>
+            <a class="btn btn-lg btn-primary" th:href="@{/country}" role="button">See people list</a>
+        </p>
+    </div>
+</div>
 </body>
 </html>
