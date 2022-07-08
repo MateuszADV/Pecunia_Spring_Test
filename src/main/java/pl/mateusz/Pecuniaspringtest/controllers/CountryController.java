@@ -9,6 +9,6 @@ public class CountryController {
     @GetMapping("/country")
     public String getCountry() {
         System.out.println("++++++++++++++++++++++++++++++++++++NAPIS TESTOWY++++++++++++++++++++++++++++++++++++");
-        return "country";
+        return "country/index";
     }
 }
