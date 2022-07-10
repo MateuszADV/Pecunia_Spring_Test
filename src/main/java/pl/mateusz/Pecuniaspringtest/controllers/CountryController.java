@@ -35,7 +35,7 @@ public class CountryController {
     public String getCountryNew(ModelMap modelMap){
         modelMap.addAttribute("countryForm", new Country());
 
-        return "/country/new";
+        return "country/new";
     }
     @PostMapping("/country/add")
     public String postCountry(@ModelAttribute("countryForm") Country country, Model model){

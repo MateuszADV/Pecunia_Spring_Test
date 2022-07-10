@@ -7,38 +7,38 @@
 </head>
 <body>
 <div layout:fragment="content" class="container">
-<!--    <form th:action="@{/country/add}" method="post" th:object="${countryForm}">-->
-<!--        <table>-->
-<!--            <tr>-->
-<!--                <td>Kontynent</td>-->
-<!--                <td><a><input class="input" type="text" th:field="*{continent}" placeholder="kontyynent"></a></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Państwo po angielsku</td>-->
-<!--                <td>-->
-<!--                    <input class="form-control" type="text" th:field="*{countryen}" placeholder="Nazwa po angielsku">-->
-<!--&lt;!&ndash;                    <span  th:if="${#fields.hasErrors('countryEn')}" th:errors="*{countryEn}" style="color: red">></span>&ndash;&gt;-->
-<!--                </td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Kraj Pl</td>-->
-<!--                <td><input class="input" type="text" th:field="*{countrypl}"></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Cod</td>-->
-<!--                <td> <input class="input" type="text" th:field="*{cod}"></td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <td>Count</td>-->
-<!--                <td><input class="input" type="number" th:field="*{count}"></td>-->
-<!--                <td></td>-->
-<!--            </tr>-->
+    <form th:action="@{/country/add}" method="post" th:object="${countryForm}">
+        <table>
+            <tr>
+                <td>Kontynent</td>
+                <td><a><input class="input" type="text" th:field="*{continent}" placeholder="kontyynent"></a></td>
+            </tr>
+            <tr>
+                <td>Państwo po angielsku</td>
+                <td>
+                    <input class="form-control" type="text" th:field="*{countryen}" placeholder="Nazwa po angielsku">
+<!--                    <span  th:if="${#fields.hasErrors('countryEn')}" th:errors="*{countryEn}" style="color: red">></span>-->
+                </td>
+            </tr>
+            <tr>
+                <td>Kraj Pl</td>
+                <td><input class="input" type="text" th:field="*{countrypl}"></td>
+            </tr>
+            <tr>
+                <td>Cod</td>
+                <td> <input class="input" type="text" th:field="*{cod}"></td>
+            </tr>
+            <tr>
+                <td>Count</td>
+                <td><input class="input" type="number" th:field="*{count}"></td>
+                <td></td>
+            </tr>
 
 
-<!--        </table>-->
+        </table>
 
-<!--        <p> <input type="submit" value="Dodaj"></p>-->
-<!--    </form>-->
+        <p> <input type="submit" value="Dodaj"></p>
+    </form>
 
 </div>
 </body>
