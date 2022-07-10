@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org"
+<html xmlns:th="http://thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout}">
 <head>
@@ -15,9 +15,7 @@
             <a class="btn btn-lg btn-primary" th:href="@{/}" role="button">See people list</a>
         </p>
 
-        <!--/*@thymesVar id="countries" type="templates"*/-->
         <th:block th:each="country : ${countries}">
-            <!--/*@thymesVar id="country" type=""*/-->
             <p th:text="${country}"></p>
         </th:block>
     </div>
