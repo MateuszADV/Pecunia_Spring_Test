@@ -28,6 +28,10 @@ public class CountryController {
         List<Country> countries = countryRepository.findAll();
         countries.forEach(System.out::println);
         modelMap.addAttribute("countries", countries);
+
+//        Usuwanie Rekordów z bazy danych
+//        System.out.println(countryRepository.findById(1l).get());
+//        countryRepository.delete(countryRepository.findById(1l).get());
         return "country/index";
     }
 
@@ -43,7 +47,7 @@ public class CountryController {
         System.out.println(country.toString());
         countryRepository.save(country);
 
-        return "country/index";
+        return "redirect:/country";
     }
 
 }
