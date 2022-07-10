@@ -31,10 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
-!/.mvn/wrapper/
+#!/.mvn/wrapper/
 !/Pecunia-spring-test.iml
 !/HELP.md
 !/.mvn/wrapper/
-!/Pecunia-spring-test.iml
-!/.mvn/wrapper/maven-wrapper.jar
-!/.mvn/wrapper/maven-wrapper.properties
+#!/Pecunia-spring-test.iml
+#!/.mvn/wrapper/maven-wrapper.properties
