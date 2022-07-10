@@ -14,6 +14,12 @@
         <p>
             <a class="btn btn-lg btn-primary" th:href="@{/}" role="button">See people list</a>
         </p>
+
+        <!--/*@thymesVar id="countries" type="templates"*/-->
+        <th:block th:each="country : ${countries}">
+            <!--/*@thymesVar id="country" type=""*/-->
+            <p th:text="${country}"></p>
+        </th:block>
     </div>
 </div>
 </body>

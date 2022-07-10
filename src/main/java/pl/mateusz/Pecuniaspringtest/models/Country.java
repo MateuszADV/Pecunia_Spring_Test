@@ -1,8 +1,6 @@
 package pl.mateusz.Pecuniaspringtest.models;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 
@@ -10,6 +8,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @ToString
 @Entity
+@Getter
+@Setter
 @Table(name = "country")
 public class Country {
   @Id
