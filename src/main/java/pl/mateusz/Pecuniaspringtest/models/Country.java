@@ -12,8 +12,17 @@ import javax.persistence.*;
 @Setter
 @Table(name = "country")
 public class Country {
+
+//  @GeneratedValue(strategy = GenerationType.AUTO)
+  @SequenceGenerator(
+          name = "country_sequence",
+          sequenceName = "country_sequence",
+          allocationSize = 1)
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(
+          strategy = GenerationType.SEQUENCE,
+          generator = "country_sequence"
+  )
   private Long id;
   private String continent;
   private String countryen;
